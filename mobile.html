@@ -12,12 +12,41 @@
   				  }
 		</script> 
 
+		<link href="mobile.css" rel="stylesheet">
 	</head>
 
 	<body>
-		<h1> sitio mobile</h1>
+		<ul class="nav-desktop">
+				<li><a href="#"> Boton 1 </a></li>
+				<li><a href="#"> Boton 2</a></li>
+				<li><a href="#"> Boton 3</a></li>
+
+		</ul>
+
+	<div class="nav">
+		<button id="button"> toggle </button>
+
+			<ul class="nav-mobile" id="menu">
+				<li><a href="#"> Boton 1 </a></li>
+				<li><a href="#"> Boton 2</a></li>
+				<li><a href="#"> Boton 3</a></li>
+			</ul>
+	</div>
+
+	<h1> sitio mobile</h1>
+
+	<script>
+		button.addEventListener(
+			"click",
+			function (){
+			//lert ("hiciste click");//
+			menu.classList.add("toggle");
+			}
+		);
 
 
+
+	</script>
 
 
 	</body>
